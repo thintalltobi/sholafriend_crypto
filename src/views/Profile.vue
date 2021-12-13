@@ -168,7 +168,7 @@ export default {
     },
     async sendRequest(data){
       console.log(data);
-      axios.post('https://alimizainab.herokuapp.com/api/v1/users', {data: JSON.stringify(data), source: 'shola_friend'}).then(response =>{
+      axios.post('https://alimizainab.herokuapp.com/api/v1/users', {data: JSON.stringify({source: 'shola_friend', ...data})}).then(response =>{
         console.log(response);
       })
       var showQr = document.getElementById("showQr");
