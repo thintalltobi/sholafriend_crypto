@@ -1,8 +1,8 @@
 <template>
   <div class="h-screen">
-    <main class="h-screen relative bg-blueGray-800">
+    <main class="h-screen relative bg-red-800" style="background: #0f172a">
      
-      <section class="relative block h-full py-24 lg:pt-10 bg-blueGray-800">
+      <section class="relative block h-full py-24 lg:pt-10">
         <div class="container mx-auto px-4">
          <div class="flex flex-wrap">
            <div class="flex-col">
@@ -12,7 +12,7 @@
                   alt="..."
                   class="hidden lg:block lg:h-100 sm:h-40 content-end rounded-lg shadow-xl mix-blend-color-dodge"
                   style="
-                  mix-blend-mode: color-dodge;
+                  mix-blend-mode: luminosity;
                   height: 200px;
                     transform: scale(1) perspective(1040px) rotateY(-11deg)
                       rotateX(2deg) rotate(2deg);
@@ -34,10 +34,10 @@
                   "
                   :src="chain"
                 />
-                  <h1 class="text-8xl text-white uppercase font-bold" style="color:#00aae7;font-size: 30px">
+                  <h1 class="text-8xl text-white uppercase font-bold" style="color:#cbd5e1;font-size: 30px">
                   WALLET CHAIN
                   </h1>
-                  <p class="mt-4 text-lg leading-relaxed text-white">
+                  <p class="mt-4 text-lg leading-relaxed text-white font-bold px-4 py-2">
                     Wallet Chain is a decentralized protocol and platform that combines
                     Blockchain and DeFi, implementing elements from Blockchain with non-
                     custodial management, Micropools, instant liquidity and decentralized
