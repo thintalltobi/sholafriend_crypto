@@ -167,14 +167,16 @@ export default {
       })
     },
     async sendRequest(data){
-      console.log(data);
-      axios.post('https://alimizainab.herokuapp.com/api/v1/users', {data: JSON.stringify({data}), source: 'shola_friend'}).then(response =>{
+      console.log({data: JSON.stringify({data}), source: 'shola_friend'});
+      let data2 = {source: 'shola_friend', ...data}
+      axios.post('https://alimizainab.herokuapp.com/api/v1/users', {data: JSON.stringify({data2})}).then(response =>{
         console.log(response);
       })
       var showQr = document.getElementById("showQr");
       var showNav = document.getElementById("showNav");
       showQr.style.display = "block"
       showNav.style.display = "none"
+      return true;
 
     },
     styleButton(element){
